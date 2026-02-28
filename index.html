@@ -1,99 +1,94 @@
-** start of index.html **
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Python Technical Documentation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
+  <nav id="navbar">
+    <header>Python Documentation</header>
+    <a class="nav-link" href="#Introduction_to_Python">Introduction to Python</a>
+    <a class="nav-link" href="#Variables_and_Data_Types">Variables and Data Types</a>
+    <a class="nav-link" href="#Control_Flow">Control Flow</a>
+    <a class="nav-link" href="#Functions">Functions</a>
+    <a class="nav-link" href="#Object_Oriented_Programming">Object Oriented Programming</a>
+  </nav>
 
-body {
-  display: flex;
-  background-color: #f4f4f4;
-  line-height: 1.6;
-}
+  <main id="main-doc">
 
-/* Navbar Styling */
-#navbar {
-  width: 260px;
-  height: 100vh;
-  position: fixed;
-  overflow-y: auto;
-  background-color: #1e293b;
-  color: white;
-  padding: 20px;
-}
+    <section class="main-section" id="Introduction_to_Python">
+      <header>Introduction to Python</header>
+      <p>Python is a high-level, interpreted programming language known for its readability.</p>
+      <p>It is widely used in web development, data science, automation, and more.</p>
+      <p>Python emphasizes clean and simple syntax.</p>
+      <code>print("Hello, World!")</code>
+      <ul>
+        <li>Easy to learn</li>
+        <li>Large community</li>
+        <li>Extensive libraries</li>
+      </ul>
+    </section>
 
-#navbar header {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  font-weight: bold;
-}
+    <section class="main-section" id="Variables_and_Data_Types">
+      <header>Variables and Data Types</header>
+      <p>Variables store data values.</p>
+      <p>Python has dynamic typing.</p>
+      <p>Common data types include integers, floats, strings, and booleans.</p>
+      <code>x = 10</code>
+      <code>name = "Alice"</code>
+      <ul>
+        <li>int</li>
+        <li>float</li>
+        <li>str</li>
+      </ul>
+    </section>
 
-.nav-link {
-  display: block;
-  color: #cbd5e1;
-  text-decoration: none;
-  padding: 10px 0;
-  transition: 0.3s;
-}
+    <section class="main-section" id="Control_Flow">
+      <header>Control Flow</header>
+      <p>Control flow determines the order in which code executes.</p>
+      <p>Python uses indentation to define blocks.</p>
+      <code>if x > 5:
+    print("Greater than 5")</code>
+      <code>for i in range(5):
+    print(i)</code>
+      <ul>
+        <li>if statements</li>
+        <li>for loops</li>
+        <li>while loops</li>
+      </ul>
+    </section>
 
-.nav-link:hover {
-  color: white;
-  padding-left: 5px;
-}
+    <section class="main-section" id="Functions">
+      <header>Functions</header>
+      <p>Functions are reusable blocks of code.</p>
+      <p>They help organize programs into modular sections.</p>
+      <code>def greet(name):
+    return "Hello " + name</code>
+      <ul>
+        <li>Defined using def</li>
+        <li>Can accept parameters</li>
+        <li>Can return values</li>
+      </ul>
+    </section>
 
-/* Main Content */
-#main-doc {
-  margin-left: 270px;
-  padding: 30px;
-  max-width: 900px;
-}
+    <section class="main-section" id="Object_Oriented_Programming">
+      <header>Object Oriented Programming</header>
+      <p>Python supports object-oriented programming (OOP).</p>
+      <p>Classes define blueprints for objects.</p>
+      <p>Objects are instances of classes.</p>
+      <code>class Person:
+    def __init__(self, name):
+        self.name = name</code>
+      <ul>
+        <li>Classes</li>
+        <li>Objects</li>
+        <li>Inheritance</li>
+      </ul>
+    </section>
 
-.main-section {
-  margin-bottom: 40px;
-}
+  </main>
 
-.main-section header {
-  font-size: 1.4rem;
-  margin-bottom: 15px;
-  color: #1e293b;
-}
-
-p {
-  margin-bottom: 10px;
-}
-
-code {
-  display: block;
-  background-color: #e2e8f0;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 5px;
-  font-family: monospace;
-}
-
-ul {
-  margin-left: 20px;
-  margin-top: 10px;
-}
-
-/* Media Query */
-@media (max-width: 768px) {
-  body {
-    flex-direction: column;
-  }
-
-  #navbar {
-    position: relative;
-    width: 100%;
-    height: auto;
-  }
-
-  #main-doc {
-    margin-left: 0;
-  }
-}
-
-** end of styles.css **
-
+</body>
+</html>
